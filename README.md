@@ -38,3 +38,10 @@
 ### docker-compose up -d
 ### docker-compose exec app php artisan key:generate
 ### docker-compose exec app php artisan config:cache
+### docker-compose exec db bash
+### mysql -u root -p
+### GRANT ALL ON laravel.* TO 'root'@'%' IDENTIFIED BY '';
+### FLUSH PRIVILEGES
+### EXIT
+### EXIT
+### docker-compose exec app php artisan migrate:refresh --seed
