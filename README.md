@@ -1,7 +1,6 @@
 ## Prerequisites
 ### If you won't execute the project on docker, I recommend you to have AMP(xampp,lamp...)
 
-
 ## - In order to install this project and it's dependencies we need to do the follow steps:
 
 ### git clone https://github.com/rmontanodev/Laravel-react-challenge.git
@@ -33,3 +32,9 @@
 
 #### By default and for testing porpuses when you create a new user via UX it will have the role of "managment" and can check json roles and check roles
 ![image](https://user-images.githubusercontent.com/34578888/112132890-64c22880-8bcb-11eb-8da5-db1ecc57ea63.png)
+
+## For docker
+### git clone https://github.com/rmontanodev/Laravel-react-challenge.git
+### docker-compose up -d
+### docker-compose exec app php artisan key:generate
+### docker-compose exec app php artisan config:cache
