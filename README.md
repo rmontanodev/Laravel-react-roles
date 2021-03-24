@@ -19,13 +19,13 @@
 #### Now only left is to create a key
 ### - php artisan key:generate
 
-## -Now we have are ready to see the application, to do that we will need to execute those commands:
+## -Now we are ready to see the application, to do that we will need to execute those commands:
 ### npm run dev
 ### php artisan serve
 
 #### Now open http://127.0.0.1:8000/ (maybe your port is different)
 
-## - To create an user with a command type this on terminal project, this user created has not any role so it does not have any permission
+## - To create an user with a command, type this on terminal project, this user created has not any role so it does not have any permission
 
 ### php artisan tinker
 ### \App\User::create(['name'=>'admin','email'=>'admin@admin.cat','password'=>bcrypt('lapassword')]);
